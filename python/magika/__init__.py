@@ -29,6 +29,11 @@ Note: MagikaResult.output is a MagikaOutputBody instance with fields:
     - mime_type: the MIME type string
     - group: broad category (e.g. 'code', 'document')
     - score: confidence score between 0.0 and 1.0
+
+See also:
+    - MagikaSingleResult for single-file identification results
+    - PredictionMode for controlling high-confidence vs. best-guess behavior
+    - Full list of supported content types: https://github.com/google/magika/blob/main/docs/supported_content_types.md
 """
 
 from magika.magika import Magika
