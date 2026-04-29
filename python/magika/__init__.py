@@ -23,6 +23,12 @@ Basic usage:
     >>> result = m.identify_bytes(b"# Hello\nprint('world')")
     >>> print(result.output.label)
     python
+
+Note: MagikaResult.output is a MagikaOutputBody instance with fields:
+    - label: the detected content type (e.g. 'python', 'pdf', 'html')
+    - mime_type: the MIME type string
+    - group: broad category (e.g. 'code', 'document')
+    - score: confidence score between 0.0 and 1.0
 """
 
 from magika.magika import Magika
